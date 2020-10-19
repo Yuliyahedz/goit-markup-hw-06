@@ -65,7 +65,7 @@
 
         <div class="container">
                
-            <h2 hidden>Преимущества студии</h2>
+            <h2 class="visually-hidden">Преимущества студии</h2>
 
             <ul class="advantages list">
                 <li class="advantages-list-item">
@@ -322,13 +322,13 @@
 
         <div class="contacts-footer">
 
-        <a class="logo-footer link" href="" aria-label="логотип вебстудио"><span class="web-footer">Web</span><span class="studio-footer">Studio</span></a>
+            <a class="logo-footer link" href="" aria-label="логотип вебстудио"><span class="web-footer">Web</span><span class="studio-footer">Studio</span></a>
         
-        <address class="address">
-            <a class="footer-address-link link" href="https://goo.gl/maps/LEfrGPTLFdmna4Pc9">г. Киев, пр-т Леси Украинки, 26</a>
-            <a class="footer-mail-link link" href="mailto:info@devstudio.com ">info@devstudio.com</a>
-            <a class="footer-tel-link link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
+            <address class="address">
+                <a class="footer-address-link link" href="https://goo.gl/maps/LEfrGPTLFdmna4Pc9">г. Киев, пр-т Леси Украинки, 26</a>
+                <a class="footer-mail-link link" href="mailto:info@devstudio.com ">info@devstudio.com</a>
+                <a class="footer-tel-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </address>
 
         </div>
 
@@ -364,6 +364,17 @@
             </ul>         
 
         </div>
+
+        <div class="contact-form-wrapper">
+            <form action="#" class="contact-form">
+                <b class="contact-form-title">Подпишитесь на рассылку</b>
+                <input type="email" class="contact-form-input">
+                <button class="contact-form-button" type="submit">Подписаться</button>
+            </form>
+
+
+        </div>
+
     </div>
     </footer>
 
@@ -372,9 +383,65 @@
             <button type="button" class="close-button" data-modal-close>
                 <svg class="close-icon">
                     <use href="./img/sprite.svg#icon-close"></use>
-                </svg>
+                </svg>                
             </button>
-        </div>
+                  
+            <form action="#" class="modal-form" autocomplete="off">
+
+                <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h1>
+                           
+                <label class="modal-form-lable">
+                    Имя
+                    <span class="modal-form-input-wrapper">
+                            <input type="text" name="name" class="modal-form-input" autofocus required/>                    
+                            <svg class="modal-form-icon">
+                                <use href="./img/sprite.svg#icon-person"></use> </svg> 
+                    </span>    
+                </label>               
+                            
+                <label class="modal-form-lable">
+                    Телефон
+                    <span class="modal-form-input-wrapper">
+                        <input type="tel" name="phone" class="modal-form-input" required>             
+                        <svg class="modal-form-icon">
+                            <use href="./img/sprite.svg#icon-phone"></use> </svg>
+                    </span>                    
+                </label>                  
+                
+                <label class="modal-form-lable">
+                    Почта
+                    <span class="modal-form-input-wrapper">
+                        <input type="email" name="email" class="modal-form-input" required>                    
+                        <svg class="modal-form-icon">
+                            <use href="./img/sprite.svg#icon-email"></use> </svg>
+                    </span>            
+                </label>
+
+                               
+                <label for="message" class="modal-form-lable">Комментарий             
+                    <textarea 
+                        name="message" 
+                        id="message" rows="10" 
+                        class="modal-form-message"
+                        placeholder="Введите текст">
+                    </textarea>
+                </label>  
+                         
+
+                <label class="modal-form-policy">
+                    <input class="modal-form-checkbox visually-hidden required"
+                    type="checkbox" 
+                    name="check-policy" 
+                    value="accept-policy"/>
+                    <span class="checkbox-icon"></span>
+                    Соглашаюсь с рассылкой и принимаю <a class="policy-link" href=""> Условия договора</a>
+                </label>                               
+                
+                <button type="submit" class="modal-form-button">Отправить</button>
+
+            </form>            
+        </div>    
+        
     </div>
     <script src="./js/modal.js"></script>    
 </body>
