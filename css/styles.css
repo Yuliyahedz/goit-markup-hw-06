@@ -555,7 +555,9 @@ img {
 /*-----FOOTER--------*/
 
 .footer {
+    width: 1600px;
     background: var(--darksections-color);
+    margin: 0 auto;
 }
 
 .footer .container,
@@ -658,7 +660,7 @@ img {
 
 .social-title,
 .contact-form-title {
-    width: 145px;
+    
     height: 16px;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -676,13 +678,26 @@ img {
 }
 
 .contact-form-wrapper {
+    display: flex;
+    flex-direction: column;
     padding-top: 72px;
     margin-left: 93px;
 }
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;      
+}
+
+.contact-form-input {
+    width: 358px;
+    height: 50px;
+    color: var(--lighttitle-text-color);
+    background-color: var(--darksections-color);    
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
 }
 
 .contact-form-button {
@@ -696,9 +711,20 @@ img {
     border: none;
     outline: none;     
     border-radius: 4px;
-    width: 200px;
     height: 50px;
-    margin-top: 30px;
+    margin-left: 12px;
+    padding-left: 29px;
+    padding-right: 62px;
+    position: relative;
+}
+
+
+.contact-form-button-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 13px;
+    right: 28px;     
 }
 
 
