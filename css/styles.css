@@ -554,23 +554,20 @@ img {
 
 /*-----FOOTER--------*/
 
-.footer {
+.footer-section {
     width: 1600px;
     background: var(--darksections-color);
     margin: 0 auto;
-}
-
-.footer .container,
-.social-footer-list {
-    display: flex;
-}
-
-.contacts-footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
-.footer .address {
+.footer-section .container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-section .address {
     display: flex;
     flex-direction: column;
     margin-top: 20px;    
@@ -628,8 +625,6 @@ img {
     flex-direction: column;
     width: 206px;
     height: 80px;
-    padding-top: 72px;
-    padding-bottom: 100px;
     margin-left: 70px;
 }
 
@@ -659,13 +654,11 @@ img {
 }
 
 .social-title,
-.contact-form-title {
-    
+.contact-form-title {    
     height: 16px;
     font-size: 14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     color: var(--lighttitle-text-color);
 
     margin-bottom: 20px;
@@ -679,8 +672,7 @@ img {
 
 .contact-form-wrapper {
     display: flex;
-    flex-direction: column;
-    padding-top: 72px;
+    flex-direction: column;    
     margin-left: 93px;
 }
 
@@ -992,17 +984,17 @@ img {
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+    color: rgba(117, 117, 117, 0.5);    
 }
 
 .modal-form-input:focus,
 .modal-form-message:focus {
-    border: solid var(--accent-color);
+    border: 1px solid var(--accent-color);
     cursor: pointer;
 }
 
 .modal-form-input:focus + .modal-form-icon {
-    fill:var(--accent-color)
+    fill: var(--accent-color);
 }
 
 .modal-form-button {
@@ -1017,8 +1009,9 @@ img {
     position: absolute;
 }
 
-.checkbox-icon {
+.modal-form-policy-label::before {
     display: inline-block;
+    content: "";
     width: 16px;
     height: 15px;
     border: 2px solid var(--title-text-color);
@@ -1026,7 +1019,7 @@ img {
     margin-right: 7px;    
 }
 
-.modal-form-policy {
+.modal-form-policy-label {
     display: flex;
     align-items: center;
     font-size: 14px;
@@ -1037,19 +1030,16 @@ img {
 
 .policy-link {
     color: var(--accent-color);
-    text-decoration-skip-ink: none;
     margin-left: 5px;
 }
 
-.modal-form-checkbox:checked + .checkbox-icon {
+.modal-form-checkbox:checked + .modal-form-policy-label::before {
     background-color: var(--accent-color);
     background-image: url(../img/modal-form/check.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-origin: content-box;
-    border: solid var(--accent-color);
+    border: 2px solid var(--accent-color);
 }
-
 
 
 /*----------END MODAL FORM---------*/

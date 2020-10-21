@@ -317,7 +317,7 @@
     </main>
     
     <!--FOOTER-->
-    <footer class="footer">
+    <footer class="footer-section">
     <div class="container">
 
         <div class="contacts-footer">
@@ -367,18 +367,23 @@
         </div>
 
         <div class="contact-form-wrapper">
+
             <b class="contact-form-title">Подпишитесь на рассылку</b>
-            <form action="#" class="contact-form">                
+
+            <form action="#" class="contact-form"> 
+
                 <input type="email" class="contact-form-input" placeholder="E-mail">
+               
                 <button class="contact-form-button" type="submit"> 
                     <span>Подписаться</span>
                     <svg class="contact-form-button-icon">
                         <use href="./img/sprite.svg#icon-send"></use>
                     </svg>
+               
                 </button>
             </form>
         </div>
-        
+
     </div>
     </footer>
 
@@ -392,7 +397,7 @@
                   
             <form action="#" class="modal-form" autocomplete="off">
 
-                <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h1>
+                <h2 class="modal-form-title"> Оставьте свои данные, мы вам перезвоним </h2>
                            
                 <label class="modal-form-lable">
                     Имя
@@ -431,16 +436,14 @@
                     </textarea>
                 </label>  
                          
-
-                <label class="modal-form-policy">
-                    <input class="modal-form-checkbox visually-hidden required"
+                <input class="modal-form-checkbox visually-hidden"
                     type="checkbox" 
                     name="check-policy" 
-                    value="accept-policy"/>
-                    <span class="checkbox-icon"></span>
-                    Соглашаюсь с рассылкой и принимаю <a class="policy-link" href=""> Условия договора</a>
-                </label>                               
-                
+                    value="accept-policy"
+                    id="check-policy"/>
+                <label for="check-policy" class="modal-form-policy-label"> Соглашаюсь с рассылкой и принимаю <a class="policy-link" href=""> Условия договора</a> </label> 
+               
+                                          
                 <button type="submit" class="modal-form-button">Отправить</button>
 
             </form>            
