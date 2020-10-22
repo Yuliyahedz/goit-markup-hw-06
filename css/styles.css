@@ -197,7 +197,7 @@ img {
 /*-------HERO----------*/
 
 .hero-section {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     background: #C4C4C4;
     text-align: center;
@@ -376,9 +376,9 @@ img {
 /*-------TEAM-------*/
 
 .team-section {
-    width: 1600px;
+    max-width: 1600px;
     background: var(--middlesection-color);
-    padding-top: 95px;
+    padding-top: 94px;
     padding-bottom: 94px;
     margin: 0 auto;        
 }
@@ -555,7 +555,7 @@ img {
 /*-----FOOTER--------*/
 
 .footer-section {
-    width: 1600px;
+    max-width: 1600px;
     background: var(--darksections-color);
     margin: 0 auto;
     padding-top: 60px;
@@ -1037,7 +1037,7 @@ img {
     background-color: var(--accent-color);
     background-image: url(../img/modal-form/check.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     border: 2px solid var(--accent-color);
 }
 
